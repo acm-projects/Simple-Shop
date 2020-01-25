@@ -14,7 +14,6 @@ Web extension designed to determine the right clothing fit when shopping online 
 	- Git/GitHub setup & understand how to make commits, push and pull requests
 	- Understand the Web Extension
 		- Understand what a web extension is and how to go about building one
-
 		- Wireframes/design
 		- Understand the purpose of the extension and have a general idea of how to go about building the web extension
 - Frontend
@@ -26,14 +25,22 @@ Web extension designed to determine the right clothing fit when shopping online 
 	- Determine if it is an image or text file
 		- If an image, perform image to text recognition
 		- If a text file, be able to parse text
-		  Compare sizes with what user entered
+	- Compare sizes with what user entered
 	- Send correct size back to frontend
 
 ## Stretch Goals
+- Allows user to customize sizing of outfits (arm length, height of shirt, etc)
+- Compares sizes of similar article of clothings (either same or different website) 
 - Once the user clicks on a specific article of clothing and clicks on the extension, they will be told their size without having to click on the sizing chart
+- Uploads full body picture of user and user's sizes are automatically calculated
 
 ## Resources
 
 - Web Extensions
 	- https://developer.chrome.com/extensions/getstarted
 	- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
+
+- Inspiration:
+	- Virtusize**: https://www.virtusize.com/site/
+	- Sizer: https://sizer.me/technology/ (Resource for Stretch Goal)
+	- MTailor: https://apps.apple.com/us/app/mtailor-custom-clothing/id816042916 (Mobile App)
