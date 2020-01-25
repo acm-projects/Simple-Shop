@@ -44,7 +44,7 @@ Web extension designed to determine the right clothing fit when shopping online 
 		- https://www.w3schools.com/css/
 
 	- Javascript: object-oriented programming language
-		- JavaScript API: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API
+		- [JavaScript API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
 
 	- Other Helpful Links/Tutorials:
 		- https://chrome.google.com/webstore/detail/ocr-image-reader/bhbhjjkcoghibhibegcmbomkbakkpdbo?hl=en
@@ -55,6 +55,6 @@ Web extension designed to determine the right clothing fit when shopping online 
 	- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
 ## Inspiration:
-	- Virtusize**: https://www.virtusize.com/site/
-	- Sizer: https://sizer.me/technology/ (Resource for Stretch Goal)
-	- MTailor: https://apps.apple.com/us/app/mtailor-custom-clothing/id816042916 (Mobile App)
+	- [Virtusize](https://www.virtusize.com/site/)
+	- [Sizer](https://sizer.me/technology/) (Resource for Stretch Goal)
+	- [MTailor](https://apps.apple.com/us/app/mtailor-custom-clothing/id816042916) (Mobile App)
