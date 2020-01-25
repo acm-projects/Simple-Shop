@@ -54,7 +54,7 @@ Web extension designed to determine the right clothing fit when shopping online 
 	- https://developer.chrome.com/extensions/getstarted
 	- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
-## Inspiration:
-	- [Virtusize](https://www.virtusize.com/site/)
-	- [Sizer](https://sizer.me/technology/) (Resource for Stretch Goal)
-	- [MTailor](https://apps.apple.com/us/app/mtailor-custom-clothing/id816042916) (Mobile App)
+## Inspiration
+[Virtusize](https://www.virtusize.com/site/)
+[Sizer](https://sizer.me/technology/) (Resource for Stretch Goal)
+[MTailor](https://apps.apple.com/us/app/mtailor-custom-clothing/id816042916) (Mobile App)
