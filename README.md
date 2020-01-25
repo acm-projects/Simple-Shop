@@ -29,7 +29,7 @@ Web extension designed to determine the right clothing fit when shopping online 
 	- Send correct size back to frontend
 
 ## Stretch Goals
-- Allows user to customize sizing of outfits (arm length, height of shirt, etc)
+- Allows user to customize sizing of outfits (arm length, shirt width, etc)
 - Compares sizes of similar article of clothings (either same or different website) 
 - Once the user clicks on a specific article of clothing and clicks on the extension, they will be told their size without having to click on the sizing chart
 - Uploads full body picture of user and user's sizes are automatically calculated
