@@ -35,8 +35,22 @@ Web extension designed to determine the right clothing fit when shopping online 
 - Uploads full body picture of user and user's sizes are automatically calculated
 
 ## Resources
+- Technologies
+	- HTML: standard markup language for documents designed to be displayed in a web browser
+		- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Extension_pages
 
-- Web Extensions
+	- CSS: style sheet language used for describing the presentation
+		- https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions
+		- https://www.w3schools.com/css/
+
+	- Javascript: object-oriented programming language
+		- JavaScript API: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API
+
+	- Other Helpful Links/Tutorials:
+		- https://chrome.google.com/webstore/detail/ocr-image-reader/bhbhjjkcoghibhibegcmbomkbakkpdbo?hl=en
+		- https://cloud.google.com/vision/docs/ocr#vision_set_endpoint-drest : Google Vision API
+
+- About Web Extensions
 	- https://developer.chrome.com/extensions/getstarted
 	- https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Anatomy_of_a_WebExtension
 
