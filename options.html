@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>Enter your measurements!</title></head>
+<body>
+
+<h1>Pants</h1>
+<label>
+  Waist size:
+  <input type="number" id="waist" placeholder=28>
+</label>
+<br>
+<label>
+  Inseam: 
+  <input type="number" id="inseam" placeholder=29>
+</label>
+<h1>Shirts</h1>
+<label for="shirt">What fits you best?</label>
+
+<select id="shirt" name="shirt">
+  <option value="xlarge">XL</option>
+  <option value="large">L</option>
+  <option value="medium">M</option>
+  <option value="small">S</option>
+  <option value="xsmall">XS</option>
+</select>
+
+
+<!--
+Favorite color:
+<select id="color">
+ <option value="red">red</option>
+ <option value="green">green</option>
+ <option value="blue">blue</option>
+ <option value="yellow">yellow</option>
+</select>
+
+<label>
+  <input type="checkbox" id="like">
+  I like colors.
+</label>
+
+-->
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>

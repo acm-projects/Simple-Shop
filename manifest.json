@@ -1,6 +1,7 @@
 {
   "name": "Simple Shop",
   "version": "1.0",
+  "description": "simplify online shopping!",
   "manifest_version": 2,
   "content_scripts": [
     {
@@ -11,7 +12,23 @@
   ],
   "browser_action": {
     "default_popup": "popup.html",
+    "default_icon": {
+			"16": "images/logo16.png",
+			"32": "images/logo32.png",
+			"48": "images/logo48.png",
+			"128": "images/logo128.png"
+		},
     "default_title": "Simple Shop"
-  }
-
+  },
+  "icons": {
+    "16": "images/logo16.png",
+    "32": "images/logo32.png",
+    "48": "images/logo48.png",
+    "128": "images/logo128.png"
+  },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
 }
