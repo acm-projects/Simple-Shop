@@ -6,8 +6,11 @@ window.onload=function() {
   }, function(items) {
     document.getElementById('waist_display').innerHTML = items.waistSize;
     document.getElementById('inseam_display').innerHTML = items.inseamSize;
-//    document.getElementById('shirt').value = items.shirtSize;
+	
+//    document.getElementById('shirt').innerHTML = items.shirtSize;
   });
+
+
 
 }
 
@@ -18,3 +21,10 @@ function openOptions(){
   var optionsURL = chrome.extension.getURL("options.html");
   chrome.tabs.create({url: optionsURL });
 }
+
+//for whatever reason, the email is blank.
+  chrome.identity.getProfileUserInfo(function(userinfo) {
+	var email = userinfo.email;
+	if(email == null || email == "") { document.getElementById('disp_email').innerHTML="email not found"; } else {
+	document.getElementById('disp_email').innerHTML = email; }
+  });  	

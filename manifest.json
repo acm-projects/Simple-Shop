@@ -4,7 +4,9 @@
   "description": "simplify online shopping!",
   "permissions": [
 	"storage",
-	"tabs"
+	"tabs",
+	"identity",
+	"identity.email"
   ],
   "manifest_version": 2,
   "browser_action": {
