@@ -2,14 +2,11 @@
   "name": "Simple Shop",
   "version": "1.0",
   "description": "simplify online shopping!",
-  "manifest_version": 2,
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-
-    }
+  "permissions": [
+	"storage",
+	"tabs"
   ],
+  "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -30,5 +27,6 @@
   "options_ui": {
     "page": "options.html",
     "open_in_tab": false
-  }
+  },
+  "web_accessible_resources": ["options.html"]
 }

@@ -1,0 +1,37 @@
+body {
+//	background-color: #F9F5E7;
+	background-color: PapayaWhip;
+}
+
+#waist_display {
+	position: absolute;
+	margin-top:-10px;
+
+	text-indent: 22px;	
+
+
+}
+
+#inseam_display {
+	position: absolute;
+	margin-top: 50px;
+	text-indent: 55px;
+}
+
+#banner {
+	text-align: center;
+}
+
+.graphics {
+	z-index: -1;
+}
+
+.user_dims {
+	color: red;
+	z-index: 1;
+	font-weight: bold;
+	//border: 2px solid LightGray;
+	//border-radius: 3px;
+	//box-sizing: border-box;
+
+}

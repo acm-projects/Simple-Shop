@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+
+    <style>
+    body {
+        overflow: hidden;
+	padding: 5px;
+	width: 420px;
+	height: 300px; 
+    }X	
+    </style>
 </head>
 <body>
-<!-- <button>Count Bears</button> -->
-<button>Let's Look at Sizes</button>
+<p id="banner">-----Welcome to Simple Shop!-----</p>
+<span class="user_dims" id="waist_display"></span>
+<span class="user_dims" id="inseam_display"></span>
+<img class="graphics" id="pants" src="images/jeans_thicc_nobg.png" height="120" width="60" alt="pant sizing">
+<button id="edit_btn" style="background: url(images/edit.png)" height="50" width="50"/>
+
 <script src="popup.js" charset="utf-8"></script>
 </body>
 </html>
