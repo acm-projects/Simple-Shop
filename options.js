@@ -2,11 +2,11 @@
 function save_options() {
   var waist = document.getElementById('waist').value;
   var inseam = document.getElementById('inseam').value;
-  var shirt = document.getElementById('shirt').value;
+  var chest = document.getElementById('chest').value;
   chrome.storage.sync.set({
     waistSize: waist,
     inseamSize: inseam,
-    shirtSize: shirt
+    chestSize: chest
   }, function() {
 
     // Update status to let user know options were saved.
@@ -20,13 +20,13 @@ function save_options() {
 
 function restore_options() {
   chrome.storage.sync.get({
-    waistSize: 29,
-    inseamSize: 34,
-    shirtSize: "M"
+    waistSize: 28,
+    inseamSize: 29,
+    chestSize: 30
   }, function(items) {
     document.getElementById('waist').value = items.waistSize;
     document.getElementById('inseam').value = items.inseamSize;
-    document.getElementById('shirt').value = items.shirtSize;
+    document.getElementById('chest').value = items.chestSize;
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

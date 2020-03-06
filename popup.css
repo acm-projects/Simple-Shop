@@ -18,8 +18,24 @@ body {
 	text-indent: 55px;
 }
 
+#chest_display {
+	position: absolute;
+	margin-top: 50ps;
+	text-indent: 100px;
+}
+
 #banner {
 	text-align: center;
+	font-family: "Verdana";
+	font-size: 4vw;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin:0;
+}
+
+#edit_btn {
+	text-align: center;
+	
 }
 
 .graphics {

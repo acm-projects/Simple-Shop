@@ -2,16 +2,12 @@ window.onload=function() {
   chrome.storage.sync.get({
     waistSize: 29,
     inseamSize: 34,
-    shirtSize: "M"
+    chestSize: 35
   }, function(items) {
-    document.getElementById('waist_display').innerHTML = items.waistSize;
-    document.getElementById('inseam_display').innerHTML = items.inseamSize;
-	
-//    document.getElementById('shirt').innerHTML = items.shirtSize;
+    document.getElementById('waist_display').innerHTML = "waist" + items.waistSize;
+    document.getElementById('inseam_display').innerHTML = "inseam" + items.inseamSize;
+    document.getElementById('chest_display').innerHTML = "chest" + items.chestSize;
   });
-
-
-
 }
 
 
