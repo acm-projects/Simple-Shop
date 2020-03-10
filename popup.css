@@ -6,22 +6,20 @@ body {
 #waist_display {
 	position: absolute;
 	margin-top:-10px;
-
-	text-indent: 22px;	
-
+	text-indent: 290px;
 
 }
 
 #inseam_display {
 	position: absolute;
-	margin-top: 50px;
-	text-indent: 55px;
+	margin-top: 140px;
+	text-indent: 348px;
 }
 
 #chest_display {
 	position: absolute;
-	margin-top: 50ps;
-	text-indent: 100px;
+	margin-top: 0px;
+	text-indent: -90px;
 }
 
 #banner {
@@ -34,8 +32,17 @@ body {
 }
 
 #edit_btn {
-	text-align: center;
 	
+}
+
+#pants {
+	float: right;
+	padding-right: 50px;
+}
+
+#shirt {
+	padding-left: 50px;
+
 }
 
 .graphics {
@@ -46,8 +53,16 @@ body {
 	color: red;
 	z-index: 1;
 	font-weight: bold;
+	font-size: 14px;
 	//border: 2px solid LightGray;
 	//border-radius: 3px;
 	//box-sizing: border-box;
 
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

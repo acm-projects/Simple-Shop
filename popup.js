@@ -4,9 +4,9 @@ window.onload=function() {
     inseamSize: 34,
     chestSize: 35
   }, function(items) {
-    document.getElementById('waist_display').innerHTML = "waist" + items.waistSize;
-    document.getElementById('inseam_display').innerHTML = "inseam" + items.inseamSize;
-    document.getElementById('chest_display').innerHTML = "chest" + items.chestSize;
+    document.getElementById('waist_display').innerHTML = items.waistSize;
+    document.getElementById('inseam_display').innerHTML = items.inseamSize;
+    document.getElementById('chest_display').innerHTML = items.chestSize;
   });
 }
 
