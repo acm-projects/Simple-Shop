@@ -3,31 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-	<link rel="stylesheet" type="text/css" href="popup.css">
-
+	<link rel="stylesheet" type="text/css" href="editing.css">
 </head>
-
 <body>
-<div id="root">
 <div id="banner">
-	<h1 id="greeting">Hi, Welcome to Simple Shop</h1>
+<h1 id="greeting">What sizes fit you best?</h1>
 </div>
 
 <div id="main">
-	<a href="editing.html" target="_self"><img id="edit_btn" src="images\edit.png" alt="" width="20" height="20"/></a>
+	<a href="popup.html" target="_self"><img id="save_btn" src="images\save.png" alt="" width="20" height="20"/></a>
 	<div class="clothing" id = "shirt">
-		<span class="user_dims" id="chest_display"></span>
+		<input type="number" class="user_input" id="chest_input" placeholder="Chest">
 		<img class="graphics" id="shirt_img" src="images/shirt_rough_nobg_color.png" height="180" width"180" alt="shirt sizing" role="button"/>
 	</div>
-
 	<div class="clothing" id = "pants">
-		<span class="user_dims" id="waist_display"></span>
-		<span class="user_dims" id="inseam_display"></span>
+		<input type="number" class="user_input" id="waist_input" placeholder="Waist">
+		<input type="number" class="user_input" id="inseam_input" placeholder="Inseam">
 		<img class="graphics" id="pants_img" src="images/jeans_thicc_nobg_color.png" height="240" width="120" alt="pant sizing" role="button"/>
 	</div>
 </div>
 
-<script src="popup.js" charset="utf-8"></script>
-</div>
+<script src="editing.js" charset="utf-8"></script>
 </body>
 </html>
