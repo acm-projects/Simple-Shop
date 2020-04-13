@@ -16,6 +16,7 @@ function save_options() {
       status.textContent = '';
     }, 750);
   });
+  location.href="popup.html";
 }
 
 function restore_options() {
@@ -27,6 +28,8 @@ function restore_options() {
     document.getElementById('waist').value = items.waistSize;
     document.getElementById('inseam').value = items.inseamSize;
     document.getElementById('chest').value = items.chestSize;
+    document.getElementById('nameTest').value = items.websiteName;
+
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
