@@ -143,7 +143,11 @@ function convertToMessage(val, email) {
 		return "Sorry, looks like your size isn't in stock :(\nWould you like us to email you at " + email + " when it's available?";
 	} 
 	document.getElementById('size_display').style.fontSize="";
-	return val;
+	if(document.getElementById('gender_toggle_box').checked) {
+		return "Men's " + val;
+	} else {
+		return "Women's " + val;
+	}
 }
 
 window.onload = function() {
@@ -166,19 +170,23 @@ window.onload = function() {
     var inseam;
     var chest;
     var email;
+    var checked_men;
     chrome.storage.sync.get({
         waistSize: 29,
         inseamSize: 34,
         chestSize: 35,
-	userEmail: "empty"
+	userEmail: "empty",
+	gender: false
     }, function(items) {
 	waist = items.waistSize;
 	inseam = items.inseamSize;
 	chest = items.chestSize;
 	email = items.userEmail;
+	checked_men = items.gender;
         document.getElementById('waist_display').innerHTML = (waist) + "\"";
         document.getElementById('inseam_display').innerHTML = (inseam) + "\"";
         document.getElementById('chest_display').innerHTML = (chest) + "\"";
+	document.getElementById('gender_toggle_box').checked = checked_men;
     });
 document.getElementById("shirt_img").addEventListener("click", function() {
         document.getElementById('selected_size').innerHTML = (convertToMessage(findRange(chest), email));
@@ -191,6 +199,11 @@ document.getElementById("shirt_img").addEventListener("click", function() {
     });
     document.getElementById("size_display").addEventListener("click", function() {
          document.getElementById('size_display').style.visibility="hidden";
+    });
+    document.getElementById("gender_toggle_box").addEventListener("change", function() {
+	chrome.storage.sync.set({
+	    gender: document.getElementById("gender_toggle_box").checked
+        });
     });
 }
 chrome.identity.getProfileUserInfo(function(userinfo) {
