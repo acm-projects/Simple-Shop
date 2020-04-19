@@ -209,6 +209,7 @@ window.onload = function() {
 
     //add event listeners to give action on clicks
     document.getElementById("shirt_img").addEventListener("click", function() {
+	introJs().start();
         document.getElementById('selected_size').innerHTML = (convertToMessage(findRange(chest, "bust"), email));
         document.getElementById('size_display').style.visibility = "visible";
 
@@ -240,6 +241,4 @@ window.onload = function() {
             });
         }
     });
-
-
 }

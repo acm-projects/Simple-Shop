@@ -4,23 +4,28 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="popup.css">
+	<link rel="stylesheet" href="introjs.css">
     </head>
     <body>
+	<script src="jquery-1.10.1.min.js"></script>
+	<script src="intro.js"></script>
         <div id="root">
+
             <div id="banner">
-                <h1 id="greeting">Hi, Welcome to Simple Shop</h1>
+                <h1 data-step="1" data-intro="Hi, This is Simple Shop!" id="greeting" class="introjs-showElement introjs-relativePosition">Hi, Welcome to Simple Shop</h1>
+		<img id="help_btn" src="images\help.png" alt="" width="20" height="20"/>
             </div>
             <div id="main">
-                <label class="switch" id="gender_toggle">
+                <label id="gender_toggle" data-step="2" data-intro="Choose between looking for masc or fem clothing" id="greeting" class="switch introjs-showElement introjs-relativePosition">
                 <input type="checkbox" id="gender_toggle_box">
                 <span class="slider round"></span>
                 </label>
-                <a href="editing.html" target="_self"><img id="edit_btn" src="images\edit.png" alt="" width="20" height="20"/></a>
-                <div class="clothing" id = "shirt">
+                <a href="editing.html" target="_self"><img data-step="5" data-intro="Edit your measurements at any time to get better recommendations" class="introjs-showElement introjs-relativePosition"  id="edit_btn" src="images\edit.png" alt="" width="20" height="20"/></a>
+                <div data-step="3" data-intro="Click the shirt to find out what size shirt will fit you best!" class="clothing introjs-showElement introjs-relativePosition" id = "shirt">
                     <span class="user_dims" id="chest_display"></span>
                     <img class="graphics" id="shirt_img" src="images/shirt_rough_nobg_color.png" height="180" width"180" alt="shirt sizing" role="button"/>
                 </div>
-                <div class="clothing" id = "pants">
+                <div data-step="4" data-intro="Click the pants to find out what size pants will fit you best!class="clothing introjs-showElement introjs-relativePosition" id = "pants">
                     <span class="user_dims" id="waist_display"></span>
                     <span class="user_dims" id="inseam_display"></span>
                     <img class="graphics" id="pants_img" src="images/jeans_thicc_nobg_color.png" height="240" width="120" alt="pant sizing" role="button"/>
