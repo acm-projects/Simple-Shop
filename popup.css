@@ -2,8 +2,8 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 295px;
 }
 
 .clothing {
@@ -11,6 +11,7 @@ body {
     vertical-align: middle;
     max-width: 180px;
     max-height: 245px;
+    z-index: 2;
 }
 
 #size_display {
@@ -22,12 +23,13 @@ body {
     width: 200px;
     height: 200px;
     color: white;
-    font-weight: 800;
     z-index: 20;
     text-align: center;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     font-size: 30px;
     visibility: hidden;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #selected_size {
@@ -39,10 +41,15 @@ body {
 
 #shirt {
     animation-name: fadeInFromLeft;
+    width: 180px;
+    height: 180px;
 }
 
 #pants {
     animation-name: fadeInFromRight;
+    height: 240px;
+    width: 120px;
+
 }
 
 .graphics {
@@ -94,7 +101,7 @@ body {
 
 #main>* {
     vertical-align: middle;
-    margin-top: 10px;
+    margin-top: -10px;
     animation-fill-mode: both;
     animation-duration: 1s;
     resize: both;
@@ -129,14 +136,18 @@ body {
 
 #waist_display {
     position: relative;
-    top: -230px;
-    left: 93px;
+ //   top: -230px;
+ //   left: 93px;
+	top: 15px;
+	left: 7px;
 }
 
 #inseam_display {
     position: relative;
-    top: -85px;
-    left: 122px;
+//    top: -85px;
+ //   left: 122px;
+	top: 159px;
+	left: 36px;
 }
 
 
