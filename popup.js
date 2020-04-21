@@ -228,6 +228,11 @@ window.onload = function() {
         });
     });
 
+    //start the tour
+    document.getElementById('help_btn').addEventListener("click", function() {
+	introJs().start();
+    });
+
     chrome.identity.getProfileUserInfo(function(userinfo) {
         var email = userinfo.email;
         if (email == null || email == "") {
@@ -240,6 +245,4 @@ window.onload = function() {
             });
         }
     });
-
-
 }
